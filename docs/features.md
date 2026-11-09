@@ -27,7 +27,7 @@ separate from real-group acceptance and commercial/legal decisions.
 | Privacy / terms / age / appearance | Complete in product | Owner contact, effective date, purpose/retention/rights/provider disclosures, terms, 13+ confirmation, privacy controls, light/dark preference. Professional legal review remains external. |
 | AdSlot abstraction | Complete, disabled | No ads or ad scripts load. Advertising consent remains off. |
 | Actual monetization | Intentionally gated | Ad-network approval, sponsors and commercial launch require the original playtest/legal prerequisites and owner decisions. |
-| CI and source hygiene | Complete in source | Typechecks, tests, build, bundle secrecy, secret scan, gitleaks, audit, hooks, weekly Dependabot and network soak workflows. Live CI result recorded at release. |
+| CI and source hygiene | Complete in source | Typechecks, tests, build, bundle secrecy, secret scan, gitleaks, audit, hooks, weekly Dependabot and network soak workflows. [Verify and secret-scan passed](https://github.com/Sanchit1612/ClueFC/actions/runs/42612826768). |
 | Network/chaos checks | Complete for local acceptance | 200 real HTTP rooms / 800 simulated players over API + D1-compatible SQLite; separate real local Worker/D1 match. Not a multi-region production capacity guarantee. |
 | Five real groups and live-device playtest | External acceptance | Must be conducted by real people. Automated bots do not satisfy this row. |
 | Name/domain/football/legal clearance | Owner decision | CLUE FC remains the selected working name; no club badges copied. No legal clearance or domain purchase is fabricated. |
