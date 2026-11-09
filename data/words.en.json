@@ -1,0 +1,3802 @@
+[
+  {
+    "word": "MESSI",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "attacking",
+      "legacy"
+    ]
+  },
+  {
+    "word": "RONALDO",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "attacking",
+      "legacy"
+    ]
+  },
+  {
+    "word": "PELÉ",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "attacking",
+      "legacy"
+    ]
+  },
+  {
+    "word": "MARADONA",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "attacking",
+      "legacy"
+    ]
+  },
+  {
+    "word": "HENRY",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "attacking",
+      "legacy"
+    ]
+  },
+  {
+    "word": "ROONEY",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "attacking",
+      "legacy"
+    ]
+  },
+  {
+    "word": "DROGBA",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "attacking",
+      "legacy"
+    ]
+  },
+  {
+    "word": "AGÜERO",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "attacking",
+      "legacy"
+    ]
+  },
+  {
+    "word": "SUÁREZ",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "attacking",
+      "legacy"
+    ]
+  },
+  {
+    "word": "LEWANDOWSKI",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "attacking",
+      "legacy"
+    ]
+  },
+  {
+    "word": "KANE",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "aerial",
+      "power"
+    ]
+  },
+  {
+    "word": "BENZEMA",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "aerial",
+      "power"
+    ]
+  },
+  {
+    "word": "IBRAHIMOVIĆ",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "aerial",
+      "power"
+    ]
+  },
+  {
+    "word": "SHEARER",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "aerial",
+      "power"
+    ]
+  },
+  {
+    "word": "VAN PERSIE",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "aerial",
+      "power"
+    ]
+  },
+  {
+    "word": "TORRES",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "aerial",
+      "power"
+    ]
+  },
+  {
+    "word": "ETO’O",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "aerial",
+      "power"
+    ]
+  },
+  {
+    "word": "VAN BASTEN",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "aerial",
+      "power"
+    ]
+  },
+  {
+    "word": "BATISTUTA",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "aerial",
+      "power"
+    ]
+  },
+  {
+    "word": "SHEVCHENKO",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "aerial",
+      "power"
+    ]
+  },
+  {
+    "word": "MBAPPÉ",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "HAALAND",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "finishing",
+      "pace",
+      "power"
+    ]
+  },
+  {
+    "word": "SALAH",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "NEYMAR",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "BALE",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "SON",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "ROBBEN",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "RIBÉRY",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "MANÉ",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "HAZARD",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "SAKA",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "VINÍCIUS",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "DI MARÍA",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "MAHREZ",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "pace",
+      "wide",
+      "skill"
+    ]
+  },
+  {
+    "word": "RONALDINHO",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "skill",
+      "legacy"
+    ]
+  },
+  {
+    "word": "ZIDANE",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "skill",
+      "legacy"
+    ]
+  },
+  {
+    "word": "BECKHAM",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "skill",
+      "legacy"
+    ]
+  },
+  {
+    "word": "INIESTA",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "skill",
+      "legacy"
+    ]
+  },
+  {
+    "word": "XAVI",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "PIRLO",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "MODRIĆ",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "KROOS",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "DE BRUYNE",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "ÖZIL",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "BERGKAMP",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "KAKÁ",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "RIQUELME",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "SNEIJDER",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "SILVA",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "FÀBREGAS",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "creation",
+      "midfield",
+      "technique"
+    ]
+  },
+  {
+    "word": "GERRARD",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "midfield",
+      "leadership",
+      "power"
+    ]
+  },
+  {
+    "word": "LAMPARD",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "midfield",
+      "leadership",
+      "power"
+    ]
+  },
+  {
+    "word": "VIEIRA",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "midfield",
+      "leadership",
+      "power"
+    ]
+  },
+  {
+    "word": "KEANE",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "midfield",
+      "leadership",
+      "power"
+    ]
+  },
+  {
+    "word": "KANTÉ",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "midfield",
+      "leadership",
+      "power"
+    ]
+  },
+  {
+    "word": "YAYA TOURÉ",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "midfield",
+      "leadership",
+      "power"
+    ]
+  },
+  {
+    "word": "BUSQUETS",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "midfield",
+      "leadership",
+      "power"
+    ]
+  },
+  {
+    "word": "CASEMIRO",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "midfield",
+      "leadership",
+      "power"
+    ]
+  },
+  {
+    "word": "BELLINGHAM",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "midfield",
+      "leadership",
+      "power"
+    ]
+  },
+  {
+    "word": "RAMOS",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "leadership",
+      "aerial"
+    ]
+  },
+  {
+    "word": "VAN DIJK",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "leadership",
+      "aerial"
+    ]
+  },
+  {
+    "word": "MALDINI",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "leadership",
+      "aerial"
+    ]
+  },
+  {
+    "word": "PUYOL",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "leadership",
+      "aerial"
+    ]
+  },
+  {
+    "word": "TERRY",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "leadership",
+      "aerial"
+    ]
+  },
+  {
+    "word": "FERDINAND",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "leadership",
+      "aerial"
+    ]
+  },
+  {
+    "word": "VIDIĆ",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "leadership",
+      "aerial"
+    ]
+  },
+  {
+    "word": "KOMPANY",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "leadership",
+      "aerial"
+    ]
+  },
+  {
+    "word": "CANNAVARO",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "leadership",
+      "aerial"
+    ]
+  },
+  {
+    "word": "CHIELLINI",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "leadership",
+      "aerial"
+    ]
+  },
+  {
+    "word": "CAFU",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "wide",
+      "pace"
+    ]
+  },
+  {
+    "word": "ROBERTO CARLOS",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "wide",
+      "pace"
+    ]
+  },
+  {
+    "word": "DANI ALVES",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "wide",
+      "pace"
+    ]
+  },
+  {
+    "word": "MARCELO",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "wide",
+      "pace"
+    ]
+  },
+  {
+    "word": "LAHM",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "wide",
+      "pace"
+    ]
+  },
+  {
+    "word": "ASHLEY COLE",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "wide",
+      "pace"
+    ]
+  },
+  {
+    "word": "HAKIMI",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "wide",
+      "pace"
+    ]
+  },
+  {
+    "word": "ZANETTI",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "defence",
+      "wide",
+      "pace"
+    ]
+  },
+  {
+    "word": "BUFFON",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "leadership"
+    ]
+  },
+  {
+    "word": "NEUER",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "leadership"
+    ]
+  },
+  {
+    "word": "CASILLAS",
+    "difficulty": "easy",
+    "kind": "player",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "leadership"
+    ]
+  },
+  {
+    "word": "ALISSON",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "COURTOIS",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "ČECH",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "SCHMEICHEL",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "VAN DER SAR",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "KAHN",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "YASHIN",
+    "difficulty": "medium",
+    "kind": "player",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "CRUYFF",
+    "difficulty": "hard",
+    "kind": "player",
+    "tags": [
+      "legacy",
+      "skill",
+      "creation"
+    ]
+  },
+  {
+    "word": "GULLIT",
+    "difficulty": "hard",
+    "kind": "player",
+    "tags": [
+      "legacy",
+      "skill",
+      "creation"
+    ]
+  },
+  {
+    "word": "RIVALDO",
+    "difficulty": "hard",
+    "kind": "player",
+    "tags": [
+      "legacy",
+      "skill",
+      "creation"
+    ]
+  },
+  {
+    "word": "ROMÁRIO",
+    "difficulty": "hard",
+    "kind": "player",
+    "tags": [
+      "legacy",
+      "skill",
+      "creation"
+    ]
+  },
+  {
+    "word": "FIGO",
+    "difficulty": "hard",
+    "kind": "player",
+    "tags": [
+      "legacy",
+      "skill",
+      "creation"
+    ]
+  },
+  {
+    "word": "BAGGIO",
+    "difficulty": "hard",
+    "kind": "player",
+    "tags": [
+      "legacy",
+      "skill",
+      "creation"
+    ]
+  },
+  {
+    "word": "TOTTI",
+    "difficulty": "hard",
+    "kind": "player",
+    "tags": [
+      "legacy",
+      "skill",
+      "creation"
+    ]
+  },
+  {
+    "word": "DEL PIERO",
+    "difficulty": "hard",
+    "kind": "player",
+    "tags": [
+      "legacy",
+      "skill",
+      "creation"
+    ]
+  },
+  {
+    "word": "EUSÉBIO",
+    "difficulty": "hard",
+    "kind": "player",
+    "tags": [
+      "legacy",
+      "skill",
+      "creation"
+    ]
+  },
+  {
+    "word": "PUSKÁS",
+    "difficulty": "hard",
+    "kind": "player",
+    "tags": [
+      "legacy",
+      "skill",
+      "creation"
+    ]
+  },
+  {
+    "word": "FERGUSON",
+    "difficulty": "medium",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "leadership",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "WENGER",
+    "difficulty": "medium",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "leadership",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "GUARDIOLA",
+    "difficulty": "medium",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "leadership",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "MOURINHO",
+    "difficulty": "medium",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "leadership",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "KLOPP",
+    "difficulty": "medium",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "leadership",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "ANCELOTTI",
+    "difficulty": "medium",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "leadership",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "BIELSA",
+    "difficulty": "hard",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "defence",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "SIMEONE",
+    "difficulty": "hard",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "defence",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "CONTE",
+    "difficulty": "hard",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "defence",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "RANIERI",
+    "difficulty": "hard",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "defence",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "SACCHI",
+    "difficulty": "hard",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "defence",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "CAPELLO",
+    "difficulty": "hard",
+    "kind": "manager",
+    "tags": [
+      "tactics",
+      "defence",
+      "dressingroom"
+    ]
+  },
+  {
+    "word": "REAL MADRID",
+    "difficulty": "easy",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "europe"
+    ]
+  },
+  {
+    "word": "BARCELONA",
+    "difficulty": "easy",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "europe"
+    ]
+  },
+  {
+    "word": "LIVERPOOL",
+    "difficulty": "easy",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "europe"
+    ]
+  },
+  {
+    "word": "ARSENAL",
+    "difficulty": "easy",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "europe"
+    ]
+  },
+  {
+    "word": "MANCHESTER UNITED",
+    "difficulty": "easy",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "europe"
+    ]
+  },
+  {
+    "word": "CHELSEA",
+    "difficulty": "easy",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "europe"
+    ]
+  },
+  {
+    "word": "BAYERN",
+    "difficulty": "easy",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "europe"
+    ]
+  },
+  {
+    "word": "JUVENTUS",
+    "difficulty": "easy",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "europe"
+    ]
+  },
+  {
+    "word": "AC MILAN",
+    "difficulty": "easy",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "europe"
+    ]
+  },
+  {
+    "word": "AJAX",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "academy"
+    ]
+  },
+  {
+    "word": "DORTMUND",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "academy"
+    ]
+  },
+  {
+    "word": "BENFICA",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "academy"
+    ]
+  },
+  {
+    "word": "PORTO",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "academy"
+    ]
+  },
+  {
+    "word": "SPORTING",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "academy"
+    ]
+  },
+  {
+    "word": "LYON",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "academy"
+    ]
+  },
+  {
+    "word": "MONACO",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "academy"
+    ]
+  },
+  {
+    "word": "PSV",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "academy"
+    ]
+  },
+  {
+    "word": "INTER",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "NAPOLI",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "ROMA",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "LAZIO",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "ATLÉTICO",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "SEVILLA",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "VALENCIA",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "TOTTENHAM",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "EVERTON",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "LEEDS",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "NEWCASTLE",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "CELTIC",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "RANGERS",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "MARSEILLE",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "PSG",
+    "difficulty": "medium",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "europe",
+      "rivalry"
+    ]
+  },
+  {
+    "word": "SANTOS",
+    "difficulty": "hard",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "international"
+    ]
+  },
+  {
+    "word": "BOCA JUNIORS",
+    "difficulty": "hard",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "international"
+    ]
+  },
+  {
+    "word": "RIVER PLATE",
+    "difficulty": "hard",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "international"
+    ]
+  },
+  {
+    "word": "GALATASARAY",
+    "difficulty": "hard",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "international"
+    ]
+  },
+  {
+    "word": "FENERBAHÇE",
+    "difficulty": "hard",
+    "kind": "club",
+    "tags": [
+      "crowd",
+      "legacy",
+      "international"
+    ]
+  },
+  {
+    "word": "WEMBLEY",
+    "difficulty": "easy",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "occasions"
+    ]
+  },
+  {
+    "word": "ANFIELD",
+    "difficulty": "easy",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "occasions"
+    ]
+  },
+  {
+    "word": "CAMP NOU",
+    "difficulty": "easy",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "occasions"
+    ]
+  },
+  {
+    "word": "OLD TRAFFORD",
+    "difficulty": "easy",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "occasions"
+    ]
+  },
+  {
+    "word": "BERNABÉU",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "SAN SIRO",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "EMIRATES",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "STAMFORD BRIDGE",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "ALLIANZ",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "GOODISON",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "ST JAMES’ PARK",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "CELTIC PARK",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "IBROX",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "PARC DES PRINCES",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "MESTALLA",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "OLÍMPICO",
+    "difficulty": "medium",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "europe"
+    ]
+  },
+  {
+    "word": "MARACANÃ",
+    "difficulty": "hard",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "international"
+    ]
+  },
+  {
+    "word": "AZTECA",
+    "difficulty": "hard",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "international"
+    ]
+  },
+  {
+    "word": "BOMBONERA",
+    "difficulty": "hard",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "international"
+    ]
+  },
+  {
+    "word": "MONUMENTAL",
+    "difficulty": "hard",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "international"
+    ]
+  },
+  {
+    "word": "LUZ",
+    "difficulty": "hard",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "international"
+    ]
+  },
+  {
+    "word": "DRAGÃO",
+    "difficulty": "hard",
+    "kind": "venue",
+    "tags": [
+      "stadium",
+      "crowd",
+      "international"
+    ]
+  },
+  {
+    "word": "OFFSIDE",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "tactics",
+      "lastline"
+    ]
+  },
+  {
+    "word": "VAR",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "tactics",
+      "lastline"
+    ]
+  },
+  {
+    "word": "REFEREE",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "tactics",
+      "lastline"
+    ]
+  },
+  {
+    "word": "LINESMAN",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "discipline",
+      "decisions"
+    ]
+  },
+  {
+    "word": "WHISTLE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "discipline",
+      "decisions"
+    ]
+  },
+  {
+    "word": "HANDBALL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "discipline",
+      "decisions"
+    ]
+  },
+  {
+    "word": "ADVANTAGE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "discipline",
+      "decisions"
+    ]
+  },
+  {
+    "word": "DISSENT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "discipline",
+      "decisions"
+    ]
+  },
+  {
+    "word": "SIMULATION",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "discipline",
+      "decisions"
+    ]
+  },
+  {
+    "word": "BOOKING",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "discipline",
+      "decisions"
+    ]
+  },
+  {
+    "word": "SUSPENSION",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "discipline",
+      "decisions"
+    ]
+  },
+  {
+    "word": "FOUL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "discipline",
+      "decisions"
+    ]
+  },
+  {
+    "word": "CAUTION",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "discipline",
+      "decisions"
+    ]
+  },
+  {
+    "word": "APPEAL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "referee",
+      "discipline",
+      "decisions"
+    ]
+  },
+  {
+    "word": "PENALTY",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "finishing",
+      "occasions"
+    ]
+  },
+  {
+    "word": "CORNER",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "finishing",
+      "occasions"
+    ]
+  },
+  {
+    "word": "FREE KICK",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "finishing",
+      "occasions"
+    ]
+  },
+  {
+    "word": "WALL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "technique",
+      "delivery"
+    ]
+  },
+  {
+    "word": "SPOT KICK",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "technique",
+      "delivery"
+    ]
+  },
+  {
+    "word": "GOAL KICK",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "technique",
+      "delivery"
+    ]
+  },
+  {
+    "word": "THROW-IN",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "technique",
+      "delivery"
+    ]
+  },
+  {
+    "word": "DROP BALL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "technique",
+      "delivery"
+    ]
+  },
+  {
+    "word": "DEAD BALL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "technique",
+      "delivery"
+    ]
+  },
+  {
+    "word": "RESTART",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "technique",
+      "delivery"
+    ]
+  },
+  {
+    "word": "SHOOTOUT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "technique",
+      "delivery"
+    ]
+  },
+  {
+    "word": "HEADER",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "attacking",
+      "aerial"
+    ]
+  },
+  {
+    "word": "VOLLEY",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "attacking",
+      "aerial"
+    ]
+  },
+  {
+    "word": "HAT-TRICK",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "attacking",
+      "aerial"
+    ]
+  },
+  {
+    "word": "CHIP",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "LOB",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "BACKHEEL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "BICYCLE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "SCISSOR KICK",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "DIVING HEADER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "TOE POKE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "SIDE FOOT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "REBOUND",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "TAP-IN",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "BRACE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "ASSIST",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "technique",
+      "attacking"
+    ]
+  },
+  {
+    "word": "PANENKA",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "skill",
+      "technique"
+    ]
+  },
+  {
+    "word": "RABONA",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "skill",
+      "technique"
+    ]
+  },
+  {
+    "word": "KNUCKLEBALL",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "skill",
+      "technique"
+    ]
+  },
+  {
+    "word": "TRIVELA",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "skill",
+      "technique"
+    ]
+  },
+  {
+    "word": "DINK",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "skill",
+      "technique"
+    ]
+  },
+  {
+    "word": "SCORPION KICK",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "finishing",
+      "skill",
+      "technique"
+    ]
+  },
+  {
+    "word": "NUTMEG",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "DRIBBLE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "FIRST TOUCH",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "STEP-OVER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "FEINT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "FLICK",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "CLOSE CONTROL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "TURN",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "SHIELDING",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "ROULETTE",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "ELASTICO",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "RAINBOW FLICK",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "skill",
+      "creation",
+      "technique"
+    ]
+  },
+  {
+    "word": "PRESSING",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "COUNTER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "POSSESSION",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "FORMATION",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "HIGH LINE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "LOW BLOCK",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "OVERLAP",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "ONE-TWO",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "THROUGH BALL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "LONG BALL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "BUILD-UP",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "SWITCH",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "TRIANGLE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "TEMPO",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "movement"
+    ]
+  },
+  {
+    "word": "GEGENPRESS",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "creation"
+    ]
+  },
+  {
+    "word": "TIKI-TAKA",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "creation"
+    ]
+  },
+  {
+    "word": "CATENACCIO",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "creation"
+    ]
+  },
+  {
+    "word": "TOTAL FOOTBALL",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "creation"
+    ]
+  },
+  {
+    "word": "FALSE NINE",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "creation"
+    ]
+  },
+  {
+    "word": "LIBERO",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "creation"
+    ]
+  },
+  {
+    "word": "REGISTA",
+    "difficulty": "hard",
+    "kind": "term",
+    "tags": [
+      "tactics",
+      "midfield",
+      "creation"
+    ]
+  },
+  {
+    "word": "MARKING",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "defence",
+      "lastline",
+      "discipline"
+    ]
+  },
+  {
+    "word": "ZONAL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "defence",
+      "lastline",
+      "discipline"
+    ]
+  },
+  {
+    "word": "SWEEPER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "defence",
+      "lastline",
+      "discipline"
+    ]
+  },
+  {
+    "word": "INTERCEPTION",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "defence",
+      "lastline",
+      "discipline"
+    ]
+  },
+  {
+    "word": "BLOCK",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "defence",
+      "lastline",
+      "discipline"
+    ]
+  },
+  {
+    "word": "CLEARANCE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "defence",
+      "lastline",
+      "discipline"
+    ]
+  },
+  {
+    "word": "TACKLE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "defence",
+      "lastline",
+      "discipline"
+    ]
+  },
+  {
+    "word": "SLIDING",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "defence",
+      "lastline",
+      "discipline"
+    ]
+  },
+  {
+    "word": "CLEAN SHEET",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "defence",
+      "lastline",
+      "discipline"
+    ]
+  },
+  {
+    "word": "OWN GOAL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "defence",
+      "lastline",
+      "discipline"
+    ]
+  },
+  {
+    "word": "RECOVERY",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "defence",
+      "lastline",
+      "discipline"
+    ]
+  },
+  {
+    "word": "SAVE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "PARRY",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "PUNCH",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "DIVE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "CATCH",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "REFLEX",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "REACH",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "DISTRIBUTION",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "goalkeeping",
+      "lastline",
+      "technique"
+    ]
+  },
+  {
+    "word": "GLOVES",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "goalkeeping",
+      "matchday"
+    ]
+  },
+  {
+    "word": "BOOTS",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "goalkeeping",
+      "matchday"
+    ]
+  },
+  {
+    "word": "BALL",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "goalkeeping",
+      "matchday"
+    ]
+  },
+  {
+    "word": "NET",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "goalkeeping",
+      "matchday"
+    ]
+  },
+  {
+    "word": "SHINPADS",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "dressingroom",
+      "matchday"
+    ]
+  },
+  {
+    "word": "STUDS",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "dressingroom",
+      "matchday"
+    ]
+  },
+  {
+    "word": "LACES",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "dressingroom",
+      "matchday"
+    ]
+  },
+  {
+    "word": "ARMBAND",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "dressingroom",
+      "matchday"
+    ]
+  },
+  {
+    "word": "BIB",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "dressingroom",
+      "matchday"
+    ]
+  },
+  {
+    "word": "TRACKSUIT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "dressingroom",
+      "matchday"
+    ]
+  },
+  {
+    "word": "KIT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "dressingroom",
+      "matchday"
+    ]
+  },
+  {
+    "word": "SOCKS",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "dressingroom",
+      "matchday"
+    ]
+  },
+  {
+    "word": "JERSEY",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "equipment",
+      "dressingroom",
+      "matchday"
+    ]
+  },
+  {
+    "word": "CROSSBAR",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "finishing",
+      "matchday"
+    ]
+  },
+  {
+    "word": "POST",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "finishing",
+      "matchday"
+    ]
+  },
+  {
+    "word": "PITCH",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "finishing",
+      "matchday"
+    ]
+  },
+  {
+    "word": "TOUCHLINE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "setpiece",
+      "matchday"
+    ]
+  },
+  {
+    "word": "DUGOUT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "setpiece",
+      "matchday"
+    ]
+  },
+  {
+    "word": "CENTRE CIRCLE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "setpiece",
+      "matchday"
+    ]
+  },
+  {
+    "word": "SIX-YARD BOX",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "setpiece",
+      "matchday"
+    ]
+  },
+  {
+    "word": "NEAR POST",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "setpiece",
+      "matchday"
+    ]
+  },
+  {
+    "word": "FAR POST",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "setpiece",
+      "matchday"
+    ]
+  },
+  {
+    "word": "TOP CORNER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "setpiece",
+      "matchday"
+    ]
+  },
+  {
+    "word": "PENALTY SPOT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "setpiece",
+      "matchday"
+    ]
+  },
+  {
+    "word": "TECHNICAL AREA",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "setpiece",
+      "matchday"
+    ]
+  },
+  {
+    "word": "TUNNEL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "stadium",
+      "setpiece",
+      "matchday"
+    ]
+  },
+  {
+    "word": "FLOODLIGHT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "crowd",
+      "stadium",
+      "matchday"
+    ]
+  },
+  {
+    "word": "TERRACE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "crowd",
+      "stadium",
+      "matchday"
+    ]
+  },
+  {
+    "word": "ULTRAS",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "crowd",
+      "stadium",
+      "matchday"
+    ]
+  },
+  {
+    "word": "CHANT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "crowd",
+      "stadium",
+      "matchday"
+    ]
+  },
+  {
+    "word": "SCARF",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "crowd",
+      "stadium",
+      "matchday"
+    ]
+  },
+  {
+    "word": "TURNSTILE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "crowd",
+      "stadium",
+      "matchday"
+    ]
+  },
+  {
+    "word": "AWAY DAYS",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "crowd",
+      "stadium",
+      "matchday"
+    ]
+  },
+  {
+    "word": "PROGRAMME",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "crowd",
+      "stadium",
+      "matchday"
+    ]
+  },
+  {
+    "word": "SEASON TICKET",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "crowd",
+      "stadium",
+      "matchday"
+    ]
+  },
+  {
+    "word": "MASCOT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "crowd",
+      "stadium",
+      "matchday"
+    ]
+  },
+  {
+    "word": "TIFO",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "crowd",
+      "stadium",
+      "matchday"
+    ]
+  },
+  {
+    "word": "WORLD CUP",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "international",
+      "awards"
+    ]
+  },
+  {
+    "word": "TROPHY",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "international",
+      "awards"
+    ]
+  },
+  {
+    "word": "FINAL",
+    "difficulty": "easy",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "international",
+      "awards"
+    ]
+  },
+  {
+    "word": "CHAMPIONS LEAGUE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "europe",
+      "awards"
+    ]
+  },
+  {
+    "word": "EUROPA LEAGUE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "europe",
+      "awards"
+    ]
+  },
+  {
+    "word": "EUROS",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "europe",
+      "awards"
+    ]
+  },
+  {
+    "word": "COPA AMÉRICA",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "europe",
+      "awards"
+    ]
+  },
+  {
+    "word": "FA CUP",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "europe",
+      "awards"
+    ]
+  },
+  {
+    "word": "LEAGUE CUP",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "europe",
+      "awards"
+    ]
+  },
+  {
+    "word": "SUPER CUP",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "europe",
+      "awards"
+    ]
+  },
+  {
+    "word": "CLUB WORLD CUP",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "europe",
+      "awards"
+    ]
+  },
+  {
+    "word": "GROUP STAGE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "tournament",
+      "drama"
+    ]
+  },
+  {
+    "word": "KNOCKOUT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "tournament",
+      "drama"
+    ]
+  },
+  {
+    "word": "QUARTER-FINAL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "tournament",
+      "drama"
+    ]
+  },
+  {
+    "word": "SEMI-FINAL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "tournament",
+      "drama"
+    ]
+  },
+  {
+    "word": "EXTRA TIME",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "tournament",
+      "drama"
+    ]
+  },
+  {
+    "word": "STOPPAGE TIME",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "tournament",
+      "drama"
+    ]
+  },
+  {
+    "word": "AGGREGATE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "tournament",
+      "drama"
+    ]
+  },
+  {
+    "word": "REPLAY",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "tournament",
+      "drama"
+    ]
+  },
+  {
+    "word": "TWO LEGS",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "tournament",
+      "drama"
+    ]
+  },
+  {
+    "word": "DRAW",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "occasions",
+      "tournament",
+      "drama"
+    ]
+  },
+  {
+    "word": "GOLDEN BOOT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "awards",
+      "legacy",
+      "finishing"
+    ]
+  },
+  {
+    "word": "BALLON D’OR",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "awards",
+      "legacy",
+      "finishing"
+    ]
+  },
+  {
+    "word": "TREBLE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "awards",
+      "legacy",
+      "finishing"
+    ]
+  },
+  {
+    "word": "DOUBLE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "awards",
+      "legacy",
+      "finishing"
+    ]
+  },
+  {
+    "word": "MEDAL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "awards",
+      "legacy",
+      "finishing"
+    ]
+  },
+  {
+    "word": "PODIUM",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "awards",
+      "legacy",
+      "finishing"
+    ]
+  },
+  {
+    "word": "GUARD OF HONOUR",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "awards",
+      "legacy",
+      "finishing"
+    ]
+  },
+  {
+    "word": "TOP SCORER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "awards",
+      "legacy",
+      "finishing"
+    ]
+  },
+  {
+    "word": "CAPTAIN",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "SUBSTITUTE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "BENCH",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "ACADEMY",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "SCOUT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "COACH",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "MANAGER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "SQUAD",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "RESERVES",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "DEBUT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "YOUTH TEAM",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "VETERAN",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "dressingroom",
+      "academy",
+      "squad"
+    ]
+  },
+  {
+    "word": "AGENT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "transfers",
+      "dressingroom",
+      "squad"
+    ]
+  },
+  {
+    "word": "LOAN",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "transfers",
+      "dressingroom",
+      "squad"
+    ]
+  },
+  {
+    "word": "TRANSFER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "transfers",
+      "dressingroom",
+      "squad"
+    ]
+  },
+  {
+    "word": "CONTRACT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "transfers",
+      "dressingroom",
+      "squad"
+    ]
+  },
+  {
+    "word": "RELEASE CLAUSE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "transfers",
+      "dressingroom",
+      "squad"
+    ]
+  },
+  {
+    "word": "DEADLINE DAY",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "transfers",
+      "dressingroom",
+      "squad"
+    ]
+  },
+  {
+    "word": "FREE AGENT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "transfers",
+      "dressingroom",
+      "squad"
+    ]
+  },
+  {
+    "word": "BUYOUT",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "transfers",
+      "dressingroom",
+      "squad"
+    ]
+  },
+  {
+    "word": "SIGNING",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "transfers",
+      "dressingroom",
+      "squad"
+    ]
+  },
+  {
+    "word": "DERBY",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "rivalry",
+      "crowd",
+      "drama"
+    ]
+  },
+  {
+    "word": "UNDERDOG",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "rivalry",
+      "crowd",
+      "drama"
+    ]
+  },
+  {
+    "word": "COMEBACK",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "rivalry",
+      "crowd",
+      "drama"
+    ]
+  },
+  {
+    "word": "UPSET",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "rivalry",
+      "crowd",
+      "drama"
+    ]
+  },
+  {
+    "word": "LAST MINUTE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "rivalry",
+      "crowd",
+      "drama"
+    ]
+  },
+  {
+    "word": "EQUALISER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "rivalry",
+      "crowd",
+      "drama"
+    ]
+  },
+  {
+    "word": "PROMOTION",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "rivalry",
+      "crowd",
+      "drama"
+    ]
+  },
+  {
+    "word": "RELEGATION",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "rivalry",
+      "crowd",
+      "drama"
+    ]
+  },
+  {
+    "word": "TITLE RACE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "rivalry",
+      "crowd",
+      "drama"
+    ]
+  },
+  {
+    "word": "SURVIVAL",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "rivalry",
+      "crowd",
+      "drama"
+    ]
+  },
+  {
+    "word": "STRIKER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "attacking",
+      "wide",
+      "squad"
+    ]
+  },
+  {
+    "word": "WINGER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "attacking",
+      "wide",
+      "squad"
+    ]
+  },
+  {
+    "word": "TARGET MAN",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "attacking",
+      "wide",
+      "squad"
+    ]
+  },
+  {
+    "word": "PLAYMAKER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "attacking",
+      "wide",
+      "squad"
+    ]
+  },
+  {
+    "word": "FULL-BACK",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "attacking",
+      "wide",
+      "squad"
+    ]
+  },
+  {
+    "word": "WING-BACK",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "attacking",
+      "wide",
+      "squad"
+    ]
+  },
+  {
+    "word": "MIDFIELDER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "attacking",
+      "wide",
+      "squad"
+    ]
+  },
+  {
+    "word": "CENTRE-BACK",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "attacking",
+      "wide",
+      "squad"
+    ]
+  },
+  {
+    "word": "WARM-UP",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "training",
+      "dressingroom",
+      "recovery"
+    ]
+  },
+  {
+    "word": "TRAINING",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "training",
+      "dressingroom",
+      "recovery"
+    ]
+  },
+  {
+    "word": "PHYSIO",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "training",
+      "dressingroom",
+      "recovery"
+    ]
+  },
+  {
+    "word": "HAMSTRING",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "training",
+      "dressingroom",
+      "recovery"
+    ]
+  },
+  {
+    "word": "STRETCHER",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "training",
+      "dressingroom",
+      "recovery"
+    ]
+  },
+  {
+    "word": "FITNESS",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "training",
+      "dressingroom",
+      "recovery"
+    ]
+  },
+  {
+    "word": "ROTATION",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "training",
+      "dressingroom",
+      "recovery"
+    ]
+  },
+  {
+    "word": "CROSS",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "delivery",
+      "wide",
+      "aerial"
+    ]
+  },
+  {
+    "word": "SET PIECE",
+    "difficulty": "medium",
+    "kind": "term",
+    "tags": [
+      "setpiece",
+      "technique",
+      "delivery"
+    ]
+  }
+]
