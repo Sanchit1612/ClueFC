@@ -76,3 +76,5 @@ node scripts/integration.mjs; node scripts/network-soak.ts --rooms 200
 - Public connection proof, owner contact and five-minute cleanup cron configured.
 - Production config stays separate from local D1 and is ignored in Git.
 - Independent owner moderation access remains locked pending separate owner-token setup.
+- Live anonymous pages, proof-gated creation, native bots, late joining and key redaction passed.
+- Forged Sites owner headers rejected on independent hosting; test clients left their room.
