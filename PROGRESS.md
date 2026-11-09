@@ -51,3 +51,9 @@ npm test; npm run typecheck; npm run build
 node scripts/validate-bundle.mjs; node scripts/scan-secrets.mjs
 npm run db:local; npm run dev
 node scripts/integration.mjs; node scripts/network-soak.ts --rooms 200
+
+## Card clarity polish
+- Refined printed frames, pitch/kit artwork and hover lift; rest of the UI unchanged.
+- Full-width checked FOUND bands and explicit BENCHED / BOOKED / SENT OFF states.
+- Secret-key cards remain distinct from actually revealed cards.
+- Verified at 320px, 390px and desktop; 126 tests, typechecks, build and secrecy checks pass.

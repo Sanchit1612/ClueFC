@@ -19,3 +19,24 @@ test('only actionable unrevealed guesser cards are enabled',()=>{
  const active=renderBoard(cards,false,true);assert.equal((active.match(/ disabled/g)??[]).length,1);
  const spy=renderBoard(cards,true,false);assert.equal((spy.match(/ disabled/g)??[]).length,2);
 });
+test('found words have a prominent labelled status, not a tiny decorative hint',()=>{
+ for(const type of ['home','away']){
+  const html=renderBoard([{word:'MESSI',type,revealed:true}],false,false);
+  assert.match(html,/class="tile-status found-status"/);
+  assert.ok(html.includes('<span>FOUND</span>'));
+  assert.ok(html.includes(', FOUND"'));
+ }
+});
+test('Spymaster keys are visibly different from actually found cards',()=>{
+ const html=renderBoard([{word:'MESSI',type:'home',revealed:false}],true,false);
+ assert.ok(html.includes('SECRET KEY'));
+ assert.ok(!html.includes('<span>FOUND</span>'));
+ assert.ok(!html.includes('tile-status found-status'));
+});
+test('referee and neutral cards have explicit revealed outcomes',()=>{
+ for(const [type,label] of Object.entries({bench:'BENCHED',yellow:'BOOKED',red:'SENT OFF'})){
+  const html=renderBoard([{word:'PITCH',type,revealed:true}],false,false);
+  assert.ok(html.includes(`<span>${label}</span>`));
+  assert.ok(!html.includes('<span>FOUND</span>'));
+ }
+});
