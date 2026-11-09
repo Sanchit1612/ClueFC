@@ -8,3 +8,5 @@ coverage/
 .DS_Store
 .openai/local*
 wrangler.production.jsonc
+
+.cloudflare-pages/

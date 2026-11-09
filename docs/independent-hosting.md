@@ -32,3 +32,36 @@ through the protected admin API. Do not copy the Sites environment wholesale.
 This starts with a fresh database. Existing test room links and browser sessions
 on the Sites origin remain there; players create new rooms at the new origin.
 No paid plan or domain purchase is initiated by preparing this configuration.
+
+## Current primary address: Pages
+
+The primary address is now https://cluefc.pages.dev. The `cluefc` Pages project
+uses the same production D1 database, via an advanced-mode `_worker.js` built
+from the tested server bundle. It serves both the interface and API directly;
+there is no proxy to the old hostname. It has its own secrets in Pages production
+settings. Browser storage is specific to each origin, so previously saved room
+sessions are not transferred between domains.
+
+To update the game:
+
+```sh
+npm run typecheck
+npm test
+npm run build
+node scripts/validate-bundle.mjs
+node scripts/prepare-pages.mjs cluefc
+npx wrangler pages deploy --project-name cluefc --branch main --cwd .cloudflare-pages
+```
+
+The generated `.cloudflare-pages/wrangler.jsonc` is ignored by Git and uses the
+real database binding from `wrangler.production.jsonc`. The old Worker now has
+`REDIRECT_ORIGIN=https://cluefc.pages.dev` in that ignored production config. Keep
+that setting when deploying it. Only its scheduled cleanup still runs there;
+all incoming requests redirect to Pages with invite paths and queries preserved.
+Pages has no scheduled handler, so retain the old Worker's cleanup cron and the
+GitHub health check. Do not create a second database for Pages.
+
+The initial Pages project was created directly using Wrangler's Pages
+`project create cluefc --production-branch main --force` path after the default
+command delegated to Workers. The project now exists; subsequent Pages deploys
+use the normal command above without `--force`.

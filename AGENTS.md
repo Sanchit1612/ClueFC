@@ -15,7 +15,10 @@ Use the existing .openai/hosting.json project ID for subsequent deployments.
 For UI work read docs/design-contract.md and relevant guidance snapshots.
 The explicit Codenames-style football interface takes precedence over generic layouts.
 
-Primary public hosting is now the owner’s Cloudflare account. Use
-wrangler.production.jsonc for deployment; wrangler.jsonc is local-only.
+Primary public hosting is https://cluefc.pages.dev in the owner’s Cloudflare account.
+Build, run node scripts/prepare-pages.mjs cluefc, then deploy using
+wrangler pages deploy --project-name cluefc --branch main --cwd .cloudflare-pages.
+The ignored wrangler.production.jsonc Worker only redirects to Pages and runs
+scheduled cleanup. Preserve its REDIRECT_ORIGIN; wrangler.jsonc is local-only.
 Preserve the legacy .openai/hosting.json identity but do not redeploy to Sites
 unless explicitly requested. See docs/independent-hosting.md.

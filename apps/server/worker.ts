@@ -8,6 +8,7 @@ const headers={
  'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','Strict-Transport-Security':'max-age=31536000; includeSubDomains','Permissions-Policy':'camera=(), microphone=(), geolocation=()','Cache-Control':'no-store'
 };
 export default {async scheduled(_event:ScheduledEvent,env:Env,ctx:ExecutionContext){ctx.waitUntil((async()=>{await cleanup(env.DB);const status=await operationalOverview(env,Date.now());for(const alert of status.alerts)console.error(JSON.stringify({event:'operational_alert',...alert}))})())},async fetch(req:Request,env:Env,ctx:ExecutionContext){
+ if(env.REDIRECT_ORIGIN){const source=new URL(req.url),target=new URL(env.REDIRECT_ORIGIN);target.pathname=source.pathname;target.search=source.search;return Response.redirect(target.href,308)}
  const path=new URL(req.url).pathname;let res:Response;
  if(path.startsWith('/api/')||path==='/health')res=await api(req,env,ctx);
  else if(path==='/app.js')res=new Response(typeof CLIENT_JS==='undefined'?'console.log("Run npm run build first")':CLIENT_JS,{headers:{'Content-Type':'text/javascript; charset=utf-8'}});

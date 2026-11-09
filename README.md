@@ -5,7 +5,7 @@ Solo play fills four seats with you and three labelled computer players; private
 Two teams connect words from one-word clues; Yellow Cards award a penalty word,
 and a Red Card ends the match. No game account is required.
 
-[Play CLUE FC](https://clue-fc.cluefc.workers.dev)
+[Play CLUE FC](https://cluefc.pages.dev)
 
 ## Run locally
 
@@ -60,9 +60,12 @@ restarts; timestamp-derived expiry applies even between cleanup jobs.
 
 ## Hosting and operations
 
-The primary public deployment runs in the owner’s Cloudflare account. See
-[independent hosting](docs/independent-hosting.md). Use the ignored account-specific
-`wrangler.production.jsonc` for production; `wrangler.jsonc` is local development.
+The primary public deployment is https://cluefc.pages.dev in the owner’s Cloudflare
+account. See [independent hosting](docs/independent-hosting.md). Build, run
+`node scripts/prepare-pages.mjs cluefc`, then deploy with
+`npx wrangler pages deploy --project-name cluefc --branch main --cwd .cloudflare-pages`.
+The old Worker only redirects traffic and runs scheduled database cleanup.
+`wrangler.jsonc` remains local development.
 The original `.openai/hosting.json` identifies the legacy Sites deployment; preserve
 its ID, but do not publish there unless the owner asks for it.
 

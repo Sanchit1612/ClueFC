@@ -78,3 +78,13 @@ node scripts/integration.mjs; node scripts/network-soak.ts --rooms 200
 - Independent owner moderation access remains locked pending separate owner-token setup.
 - Live anonymous pages, proof-gated creation, native bots, late joining and key redaction passed.
 - Forged Sites owner headers rejected on independent hosting; test clients left their room.
+
+## Shorter public address
+- Primary public URL: https://cluefc.pages.dev
+- Pages project cluefc, production branch main, existing D1 database reused.
+- Full-stack advanced mode runs the same tested Worker bundle on Pages.
+- New public pages, proof-gated creation, three native bots, late joining,
+  hidden-key redaction and forged-owner rejection passed live smoke checks.
+- 138 tests, typechecks, build, bundle secrecy and canonical redirect checks passed.
+- Old Workers URL redirects to Pages; its five-minute cleanup schedule stays active.
+- Browser storage is origin-specific; players start fresh browser sessions at the new URL.
