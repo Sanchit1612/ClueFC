@@ -5,7 +5,7 @@ Solo play fills four seats with you and three labelled computer players; private
 Two teams connect words from one-word clues; Yellow Cards award a penalty word,
 and a Red Card ends the match. No game account is required.
 
-[Play CLUE FC](https://clue-fc-matchday.moistcrown2.chatgpt.site)
+[Play CLUE FC](https://clue-fc.cluefc.workers.dev)
 
 ## Run locally
 
@@ -60,12 +60,15 @@ restarts; timestamp-derived expiry applies even between cleanup jobs.
 
 ## Hosting and operations
 
-`.openai/hosting.json` identifies the existing Sites deployment. Never create a
-second Site to update it. Sites source synchronization and GitHub are separate.
-For a direct Cloudflare deployment, provision D1, apply the migrations and bind
-`DB` before deploying. Wrangler includes a maintenance cron for that path.
+The primary public deployment runs in the owner’s Cloudflare account. See
+[independent hosting](docs/independent-hosting.md). Use the ignored account-specific
+`wrangler.production.jsonc` for production; `wrangler.jsonc` is local development.
+The original `.openai/hosting.json` identifies the legacy Sites deployment; preserve
+its ID, but do not publish there unless the owner asks for it.
 
-`/admin` uses the verified Site owner's identity. It provides persistent moderation
+`/admin` uses the verified Site owner’s identity on the legacy Sites deployment.
+Direct hosting keeps administrative access locked until an owner token is securely
+provisioned; it never trusts a client-supplied Sites identity header. The admin API provides persistent moderation
 reports, aggregate metrics and operational alerts. Public contact email is
 separate from the private admin identity. Server credentials are runtime secrets;
 `.env.example` contains names only.

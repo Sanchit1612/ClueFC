@@ -68,3 +68,11 @@ node scripts/integration.mjs; node scripts/network-soak.ts --rooms 200
 - 138 tests, typechecks, production build and browser secrecy checks pass.
 - Local Worker/D1 UI verified: solo entry, autonomous opponent, human reveal, mobile/desktop.
 - Limit: bots recognise a curated set of football associations, not arbitrary language.
+
+## Independent hosting
+- Primary public URL: https://clue-fc.cluefc.workers.dev
+- Owner Cloudflare account authorized; new APAC D1 database migrated.
+- Production security secrets provisioned without printing or persisting values locally.
+- Public connection proof, owner contact and five-minute cleanup cron configured.
+- Production config stays separate from local D1 and is ignored in Git.
+- Independent owner moderation access remains locked pending separate owner-token setup.

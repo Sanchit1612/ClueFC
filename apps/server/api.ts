@@ -44,7 +44,7 @@ export async function api(req:Request,env:Env,ctx:ExecutionContext){
    if(!env.DB)fail('STORAGE_UNAVAILABLE');await env.DB.prepare('SELECT 1 AS healthy').first();ctx.waitUntil(cleanup(env.DB,now));
    return json({ok:true,service:'clue-fc',storage:true,botProtection:env.TURNSTILE_SECRET?'turnstile':env.PUBLIC_MODE==='true'?'connection-proof':'private'});
   }
-  if(path==='/api/config')return json({turnstileSiteKey:env.TURNSTILE_SITE_KEY??null,botProtection:env.TURNSTILE_SECRET?'turnstile':env.PUBLIC_MODE==='true'?'proof':'none',ownerContact:env.OWNER_CONTACT??'sanchitgoeldev@gmail.com',public:env.PUBLIC_MODE==='true',admin:isAdmin(req,env),adsEnabled:false});
+  if(path==='/api/config')return json({turnstileSiteKey:env.TURNSTILE_SITE_KEY??null,botProtection:env.TURNSTILE_SECRET?'turnstile':env.PUBLIC_MODE==='true'?'proof':'none',ownerContact:env.OWNER_CONTACT??'sanchitgoeldev@gmail.com',public:env.PUBLIC_MODE==='true',admin:isAdmin(req,env),adminSiteSignIn:!!env.ADMIN_EMAIL,adsEnabled:false});
   if(!env.DB)fail('STORAGE_UNAVAILABLE');
   ips=await ipHashes(req,env,now);await banCheck(env.DB,ips,now);
   if(path.startsWith('/api/admin/'))return await adminApi(req,env,req.method==='POST'?await readBody(req):null,now);

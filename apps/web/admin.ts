@@ -1,6 +1,6 @@
 import {escapeHtml as esc} from './cards.ts';
-export async function renderAdmin(root:Element,allowed:boolean){
- if(!allowed){root.innerHTML=`<main class="admin-shell"><h1>CLUE FC operations</h1><p>Owner access only. Sign in using the operator’s ChatGPT account.</p><a class="btn primary" href="/signin-with-chatgpt?return_to=%2Fadmin" target="_top">Sign in with ChatGPT</a><a class="btn secondary" href="/">Back to game</a></main>`;return}
+export async function renderAdmin(root:Element,allowed:boolean,siteSignIn=true){
+ if(!allowed){root.innerHTML=`<main class="admin-shell"><h1>CLUE FC operations</h1><p>${siteSignIn?'Owner access only. Sign in using the operator’s ChatGPT account.':'Owner access only. Administrative access is managed separately through the hosting account.'}</p>${siteSignIn?'<a class="btn primary" href="/signin-with-chatgpt?return_to=%2Fadmin" target="_top">Sign in with ChatGPT</a>':''}<a class="btn secondary" href="/">Back to game</a></main>`;return}
  root.innerHTML='<main class="admin-shell"><h1>Match control</h1><p>Loading operations…</p></main>';
  const [overview,reports]=await Promise.all([fetch('/api/admin/overview').then(r=>r.json()),fetch('/api/admin/reports').then(r=>r.json())]);
  if(overview.error||!Array.isArray(reports))throw Error('ADMIN_REQUIRED');
