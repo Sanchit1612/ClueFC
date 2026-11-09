@@ -57,3 +57,14 @@ node scripts/integration.mjs; node scripts/network-soak.ts --rooms 200
 - Full-width checked FOUND bands and explicit BENCHED / BOOKED / SENT OFF states.
 - Secret-key cards remain distinct from actually revealed cards.
 - Verified at 320px, 390px and desktop; 126 tests, typechecks, build and secrecy checks pass.
+
+## Built-in bot play
+- Solo entry creates a private match with a human guesser and three labelled bots.
+- Private hosts can fill/remove bots before kick-off and take over a bot key.
+- Server-only association clues and word-only guessing; no AI service or API key.
+- Careful/balanced/bold personalities: varied timing, plausible misreads, passes and riskier clues.
+- Poll-driven paced turns persist in D1; all-human-offline freezes and expiry retained.
+- Public matchmaking remains human-only; active-human metrics exclude bot seats.
+- 138 tests, typechecks, production build and browser secrecy checks pass.
+- Local Worker/D1 UI verified: solo entry, autonomous opponent, human reveal, mobile/desktop.
+- Limit: bots recognise a curated set of football associations, not arbitrary language.

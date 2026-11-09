@@ -1,10 +1,10 @@
 import {finish,nextTurn,type Team} from '../../packages/game-core/index.ts';
 import type {Room} from './rooms.ts';
 export const PRESENCE_TIMEOUT=25000;
-export const connected=(p:Room['players'][number],now:number)=>!p.left&&now-p.seen<PRESENCE_TIMEOUT;
+export const connected=(p:Room['players'][number],now:number)=>!p.left&&(!!p.bot||now-p.seen<PRESENCE_TIMEOUT);
 const lostAt=(p:Room['players'][number])=>p.left?(p.leftAt??p.seen):p.seen+PRESENCE_TIMEOUT;
 export function roomExpiresAt(r:Room){
- const latest=Math.max(r.created,...r.players.map(lostAt));
+ const latest=Math.max(r.created,...r.players.filter(p=>!p.bot).map(lostAt));
  return (r.emptyAt??latest)+(r.game&&r.game.phase!=='ended'?600000:300000);
 }
 export function touch(r:Room,p:Room['players'][number],now:number){
@@ -13,7 +13,7 @@ export function touch(r:Room,p:Room['players'][number],now:number){
 }
 export function lifecycle(r:Room,now:number){
  let changed=false;const online=r.players.filter(p=>connected(p,now));
- if(!online.length){if(!r.emptyAt){r.emptyAt=Math.min(now,Math.max(r.created,...r.players.map(lostAt)));changed=true}return changed}
+ if(!online.some(p=>!p.bot)){if(!r.emptyAt){r.emptyAt=Math.min(now,Math.max(r.created,...r.players.filter(p=>!p.bot).map(lostAt)));changed=true}return changed}
  const g=r.game;
  if(r.emptyAt){
   const pause=Math.max(0,now-r.emptyAt);
@@ -21,7 +21,7 @@ export function lifecycle(r:Room,now:number){
   r.lastAction+=pause;r.emptyAt=null;r.teamEmpty={home:null,away:null};changed=true;
  }
  const host=r.players.find(p=>p.id===r.host);
- if(!host||host.left||now-host.seen>=30000){r.host=[...online].sort((a,b)=>a.joined-b.joined)[0].id;changed=true}
+ if(!host||host.left||now-host.seen>=30000){r.host=online.filter(p=>!p.bot).sort((a,b)=>a.joined-b.joined)[0].id;changed=true}
  if(!g||g.phase==='ended'){
   if(!g)for(const p of r.players)if(p.team&&!connected(p,now)&&now-lostAt(p)>=60000){p.team=null;p.spy=false;p.left=true;changed=true}
   return changed;

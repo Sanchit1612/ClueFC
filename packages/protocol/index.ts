@@ -5,7 +5,7 @@ const team=z.enum(['home','away']);
 const schemas={
  'team.join':z.object({team}), 'role.claim':z.object({}),
  'settings.update':z.object({timer:z.union([z.literal(0),z.literal(60),z.literal(90),z.literal(120)]),yellows:z.boolean(),protectLast:z.boolean(),pack:z.enum(['classic','terrace','tactics']).optional()}),
- 'match.start':z.object({}), 'clue.submit':z.object({word:z.string().max(30),number:z.union([z.number().int().min(0).max(9),z.literal('unlimited')])}),
+ 'bots.fill':z.object({}), 'bots.remove':z.object({}), 'match.start':z.object({}), 'clue.submit':z.object({word:z.string().max(30),number:z.union([z.number().int().min(0).max(9),z.literal('unlimited')])}),
  'tile.reveal':z.object({index:z.number().int().min(0).max(24)}), 'turn.end':z.object({}), 'match.rematch':z.object({}), 'lobby.return':z.object({}),
  'player.ready':z.object({}), 'room.leave':z.object({}), 'ping':z.object({}),
  'reaction':z.object({text:z.enum(['Nice one','Unlucky','GG','What a clue','Come on!'])}),

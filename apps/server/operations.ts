@@ -8,7 +8,7 @@ export async function metric(db:D1Database,name:string,value=1,now=Date.now()){
 }
 export async function persistEffects(db:D1Database,before:Room,after:Room,now:number){
  const jobs:Promise<unknown>[]=[];
- if(after.matches>before.matches){jobs.push(metric(db,'matches_started',1,now));if(after.matches>1)jobs.push(metric(db,'rematches',1,now));if(after.matches===2)jobs.push(metric(db,'groups_playing_second_match',1,now))}
+ if(after.matches>before.matches){if(after.players.some(p=>p.bot))jobs.push(metric(db,'bot_matches_started',1,now));jobs.push(metric(db,'matches_started',1,now));if(after.matches>1)jobs.push(metric(db,'rematches',1,now));if(after.matches===2)jobs.push(metric(db,'groups_playing_second_match',1,now))}
  if(after.game?.phase==='ended'&&before.game?.phase!=='ended'){
   jobs.push(metric(db,'matches_finished',1,now),metric(db,'match_duration_ms',(after.game.endedAt??now)-after.game.started,now));
   if(['idle','abandoned'].includes(after.game.reason))jobs.push(metric(db,'matches_abandoned',1,now));
@@ -36,7 +36,7 @@ export async function operationalOverview(env:SecurityEnv,now:number){
   env.DB.prepare("SELECT COUNT(*) AS count FROM reports WHERE status='open' AND created>?").bind(now-30*86400000).first<{count:number}>(),
   env.DB.prepare('SELECT day,name,value,samples FROM metrics WHERE day>=? ORDER BY day DESC,name').bind(dayOf(now-30*86400000)).all()
  ]);
- let connected=0,active=0;for(const row of rooms.results){const room=JSON.parse(row.state) as Room;connected+=room.players.filter(p=>!p.left&&now-p.seen<25000).length;if(room.game&&room.game.phase!=='ended')active++}
+ let connected=0,active=0;for(const row of rooms.results){const room=JSON.parse(row.state) as Room;connected+=room.players.filter(p=>!p.bot&&!p.left&&now-p.seen<25000).length;if(room.game&&room.game.phase!=='ended')active++}
  const errors=metrics.results.filter((m:any)=>m.name==='request_errors'&&m.day===dayOf(now)).reduce((n,m:any)=>n+m.value,0);
  return {rooms:rooms.results.length,connectedPlayers:connected,activeMatches:active,openReports:reports?.count??0,metrics:metrics.results,alerts:[...(errors>10?[{severity:'error',message:`${errors} request errors today. Review Worker logs.`}]:[]),...(reports&&reports.count>10?[{severity:'warning',message:`${reports.count} moderation reports await review.`}]:[])],serverTime:now};
 }

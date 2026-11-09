@@ -1,6 +1,7 @@
 # CLUE FC
 
-A football word game for 4–12 players, with private rooms and public Quick Match.
+A football word game with solo bot play, private rooms and public Quick Match.
+Solo play fills four seats with you and three labelled computer players; private hosts can also fill empty seats with bots. Quick Match is for humans. See [bot play](docs/bot-play.md).
 Two teams connect words from one-word clues; Yellow Cards award a penalty word,
 and a Red Card ends the match. No game account is required.
 

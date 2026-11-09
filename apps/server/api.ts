@@ -32,7 +32,7 @@ export async function mutate<T>(db:D1Database,code:string,fn:(r:Room)=>{value:T;
 }
 function authenticate(r:Room,req:Request,now:number){
  const token=req.headers.get('Authorization')?.replace(/^Bearer /,'');const p=r.players.find(q=>q.token===token);
- if(!p||p.left||r.bans.some(b=>b.token===token&&b.until>now))fail('NOT_IN_ROOM');
+ if(!p||p.bot||p.left||r.bans.some(b=>b.token===token&&b.until>now))fail('NOT_IN_ROOM');
  if(p.session!==req.headers.get('X-Session'))fail('OPENED_ELSEWHERE');return p;
 }
 const bannedFrom=(r:Room,token:string|undefined,ips:string[],now:number)=>r.bans.some(b=>b.until>now&&(!!token&&b.token===token||!!b.ipHash&&ips.includes(b.ipHash)));
