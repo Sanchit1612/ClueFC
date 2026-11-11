@@ -105,4 +105,4 @@ node scripts/integration.mjs; node scripts/network-soak.ts --rooms 200
 - Public pages/health/assets, private API denial, forged-owner denial, DNT suppression and
   legacy redirect passed live checks without inserting test visitor records.
 - Scheduled redirect Worker updated (d42c1e93); cleanup still runs every five minutes.
-- GitHub main published as 9ca1191; owner live login check pending.
+- GitHub main published as 9ca1191; owner live login and empty-state dashboard verified.
