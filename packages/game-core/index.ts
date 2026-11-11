@@ -4,7 +4,7 @@ import blocklist from '../../data/blocklist.json' with {type:'json'};
 export {APP_NAME} from '../protocol/constants.ts';
 export type Team='home'|'away';
 export type Kind=Team|'bench'|'yellow'|'red';
-export type Player={id:string;token:string;name:string;team:Team|null;spy:boolean;seen:number;joined:number;seq:number;session:string;ready:boolean;left?:boolean;leftAt?:number;ipHash?:string;warnings?:string[];lastError?:{seq:number;code:string};invalid:number;bot?:boolean;botStyle?:'careful'|'balanced'|'bold'};
+export type Player={id:string;token:string;name:string;team:Team|null;spy:boolean;seen:number;joined:number;seq:number;session:string;ready:boolean;left?:boolean;leftAt?:number;ipHash?:string;warnings?:string[];lastError?:{seq:number;code:string};invalid:number;analyticsSession?:string;bot?:boolean;botStyle?:'careful'|'balanced'|'bold'};
 export type Tile={word:string;type:Kind;revealed:boolean};
 export type Settings={timer:number;yellows:boolean;protectLast:boolean;pack?:'classic'|'terrace'|'tactics'};
 export type Game={participants?:{id:string;name:string;team:Team|null;spy:boolean}[];board:Tile[];starting:Team;active:Team;phase:'clue'|'guess'|'ended';clue:{word:string;number:number|'unlimited'}|null;guesses:number;endsAt:number|null;winner:Team|null;reason:string;turn:number;started:number;history:{text:string;at:number}[];stats:MatchStats;lastClueAt:number;clueBy:string|null;clueHits:number;lastGuessAt:number;endedAt:number|null;pausedAt:number|null;pauseUsed:boolean;autoPasses:Record<Team,number>};

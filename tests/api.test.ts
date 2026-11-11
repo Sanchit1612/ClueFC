@@ -24,3 +24,11 @@ test('bot setup is persisted, idempotent and never authenticates a computer seat
  assert.equal(state.game.phase,'guess');assert.equal(state.game.history.filter((h:any)=>h.text.includes('clue:')).length,1);assert.ok(state.game.board.every((t:any)=>t.type===null));
  await ctx.drain();db.close();
 });
+test('opt-in room creation and native bot kickoff reach the private growth report without exposing analytics IDs',async()=>{
+ const {db,ctx,call,env}=harness();const session='a'.repeat(32),headers={'X-Analytics-Session':session};
+ const visit=await call('/api/analytics/event',{session,visitor:'b'.repeat(32),consent:true,name:'landing_view',source:'r-playmygame',medium:'community',campaign:'beta-launch',content:'launch-post',device:'mobile'});assert.equal(visit.status,200);
+ const p=(await call('/api/rooms',{nickname:'Tracked Tester'},undefined,headers)).data;
+ for(const [i,type] of ['bots.fill','match.start'].entries()){const r=await call('/api/rooms/'+p.code+'/action',{type,seq:i+1,payload:{}},p,headers);assert.equal(r.status,200);assert.ok(!JSON.stringify(r.data).includes('analyticsSession'))}
+ await ctx.drain();const report=await call('/api/admin/analytics?days=7',undefined,undefined,{'X-Admin-Token':env.ADMIN_TOKEN});assert.equal(report.status,200);assert.equal(report.data.games.started,1);assert.equal(report.data.games.modes.solo,1);assert.equal(report.data.traffic.sessions,1);assert.equal(report.data.traffic.funnel.room_entered,1);assert.equal(report.data.traffic.funnel.match_started,1);assert.ok(!JSON.stringify(report.data).includes(session));
+ const denied=await call('/api/admin/analytics?days=7');assert.equal(denied.status,403);db.close();
+});

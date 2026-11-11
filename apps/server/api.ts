@@ -1,4 +1,6 @@
 import {z} from 'zod';
+import {hasAdminAccess,adminLogin} from './admin-auth.ts';
+import {growthEvent,growthRevoke,resolveGrowthSession,recordStage} from './growth.ts';
 import {parseMessage,codeSchema,nameSchema} from '../../packages/protocol/index.ts';
 import {fail} from '../../packages/game-core/index.ts';
 import {makePlayer,makeRoom,roomCode,addPlayer,apply,snapshot,tick,type Room} from './rooms.ts';
@@ -44,9 +46,12 @@ export async function api(req:Request,env:Env,ctx:ExecutionContext){
    if(!env.DB)fail('STORAGE_UNAVAILABLE');await env.DB.prepare('SELECT 1 AS healthy').first();ctx.waitUntil(cleanup(env.DB,now));
    return json({ok:true,service:'clue-fc',storage:true,botProtection:env.TURNSTILE_SECRET?'turnstile':env.PUBLIC_MODE==='true'?'connection-proof':'private'});
   }
-  if(path==='/api/config')return json({turnstileSiteKey:env.TURNSTILE_SITE_KEY??null,botProtection:env.TURNSTILE_SECRET?'turnstile':env.PUBLIC_MODE==='true'?'proof':'none',ownerContact:env.OWNER_CONTACT??'sanchitgoeldev@gmail.com',public:env.PUBLIC_MODE==='true',admin:isAdmin(req,env),adminSiteSignIn:!!env.ADMIN_EMAIL,adsEnabled:false});
+  if(path==='/api/config')return json({turnstileSiteKey:env.TURNSTILE_SITE_KEY??null,botProtection:env.TURNSTILE_SECRET?'turnstile':env.PUBLIC_MODE==='true'?'proof':'none',ownerContact:env.OWNER_CONTACT??'sanchitgoeldev@gmail.com',public:env.PUBLIC_MODE==='true',admin:await hasAdminAccess(req,env,now),adminLoginConfigured:!!env.ADMIN_TOKEN&&env.ADMIN_TOKEN.length>=24,adminSiteSignIn:!!env.ADMIN_EMAIL,adsEnabled:false});
   if(!env.DB)fail('STORAGE_UNAVAILABLE');
   ips=await ipHashes(req,env,now);await banCheck(env.DB,ips,now);
+  if(path==='/api/admin/login'&&req.method==='POST')return await adminLogin(req,env,await readBody(req),ips[0],now);
+  if(path==='/api/analytics/event'&&req.method==='POST'){await counter(env.DB,'growth:'+ips[0],60,60000,now);return json(await growthEvent(req,env,await readBody(req),now))}
+  if(path==='/api/analytics/revoke'&&req.method==='POST'){await counter(env.DB,'growth-revoke:'+ips[0],10,60000,now);return json(await growthRevoke(env,await readBody(req)))}
   if(path.startsWith('/api/admin/'))return await adminApi(req,env,req.method==='POST'?await readBody(req):null,now);
   if(path==='/api/challenge'&&req.method==='GET'){await counter(env.DB,'challenge-issue:'+ips[0],30,60000,now);return json(await makeChallenge(env,ips[0],now))}
   if(path==='/api/analytics/visit'&&req.method==='POST'){await counter(env.DB,'analytics:'+ips[0],10,60000,now);return json(await analyticsVisit(req,env,await readBody(req),now))}
@@ -54,7 +59,7 @@ export async function api(req:Request,env:Env,ctx:ExecutionContext){
    await counter(env.DB,'create:'+ips[0],5,600000,now);const data=joinSchema.parse(await readBody(req));
    if(env.PUBLIC_MODE==='true'&&!data.ageConfirmed)fail('AGE_CONFIRMATION_REQUIRED');
    await verifyGate(req,env,ips[0],data.challenge,now);
-   const p=makePlayer(data.nickname,now);p.ipHash=ips[0];let code:string|undefined;
+   const p=makePlayer(data.nickname,now);p.ipHash=ips[0];p.analyticsSession=await resolveGrowthSession(req,env,now);let code:string|undefined;let createdRoom=false;
    if(path==='/api/quick'){
     const rows=await env.DB.prepare('SELECT code FROM rooms WHERE public=1 AND expires>? ORDER BY updated DESC LIMIT 30').bind(now).all<{code:string}>();
     for(const row of rows.results){try{
@@ -68,21 +73,22 @@ export async function api(req:Request,env:Env,ctx:ExecutionContext){
     const r=makeRoom('',p,path==='/api/quick',now);if(r.public){p.team='home';p.spy=true}
     for(let attempt=0;attempt<10;attempt++){
      r.code=roomCode();const inserted=await env.DB.prepare('INSERT OR IGNORE INTO rooms(code,version,public,updated,expires,state) VALUES(?,?,?,?,?,?)').bind(r.code,1,r.public?1:0,now,roomExpiresAt(r),JSON.stringify(r)).run();
-     if(inserted.meta.changes){code=r.code;break}
+     if(inserted.meta.changes){code=r.code;createdRoom=true;break}
     }
-    if(code)ctx.waitUntil(metric(env.DB,'rooms_created',1,now));
+    if(code){ctx.waitUntil(metric(env.DB,'rooms_created',1,now));ctx.waitUntil(metric(env.DB,'human_seats_created',1,now))}
    }
-   if(!code)fail('PLEASE_RETRY');ctx.waitUntil(cleanup(env.DB,now));return json({code,token:p.token,session:p.session,id:p.id});
+   if(!code)fail('PLEASE_RETRY');ctx.waitUntil(recordStage(env.DB,p.analyticsSession,createdRoom?'room_created':'room_joined',now));ctx.waitUntil(cleanup(env.DB,now));return json({code,token:p.token,session:p.session,id:p.id});
   }
   const match=path.match(/^\/api\/rooms\/([^/]+)(?:\/(join|action))?$/);if(!match)return json({error:'NOT_FOUND'},404);
   const code=codeSchema.parse(match[1]);
   if(match[2]==='join'&&req.method==='POST'){
    await counter(env.DB,'join:'+ips[0],30,60000,now);const data=joinSchema.parse(await readBody(req));
    if(env.PUBLIC_MODE==='true'&&!data.token&&!data.ageConfirmed)fail('AGE_CONFIRMATION_REQUIRED');
+   const tracking=await resolveGrowthSession(req,env,now);
    return json(await mutate(env.DB,code,r=>{
     if(bannedFrom(r,data.token,ips,now))fail('NOT_IN_ROOM');let p=r.players.find(q=>q.token===data.token);
     if(p&&!p.left){p.session=crypto.randomUUID();touch(r,p,now);p.ipHash=ips[0]}
-    else{p=makePlayer(data.nickname,now);p.ipHash=ips[0];addPlayer(r,p,now)}tick(r,now);
+    else{p=makePlayer(data.nickname,now);p.ipHash=ips[0];addPlayer(r,p,now)}p.analyticsSession=tracking;tick(r,now);
     return {value:{code,token:p.token,session:p.session,id:p.id,seq:p.seq},changed:true};
    },now));
   }
@@ -98,8 +104,9 @@ export async function api(req:Request,env:Env,ctx:ExecutionContext){
    const msg=parseMessage(await readBody(req));
    if(msg.type==='clue.submit'){await counter(env.DB,'clue-ip:'+ips[0],20,60000,now);await counter(env.DB,'clue-token:'+token,5,60000,now)}
    if(msg.type==='report.player'){await counter(env.DB,'report-ip:'+ips[0],5,600000,now);await counter(env.DB,'report-token:'+token,5,600000,now)}
+   const tracking=await resolveGrowthSession(req,env,now);
    const result=await mutate(env.DB,code,r=>{
-    const p=authenticate(r,req,now);touch(r,p,now);tick(r,now);
+    const p=authenticate(r,req,now);p.analyticsSession=tracking;touch(r,p,now);tick(r,now);
     if(msg.seq<=p.seq)return {value:p.lastError?.seq===msg.seq?{error:p.lastError.code}:snapshot(r,p,now),changed:true};
     let error:string|null=null;try{apply(r,p,msg.type,msg.payload,now)}catch(e){error=(e as Error).message;if(!/^[A-Z_]+$/.test(error))throw e}
     p.seq=msg.seq;p.lastError=error?{seq:msg.seq,code:error}:undefined;

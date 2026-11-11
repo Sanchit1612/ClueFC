@@ -88,3 +88,17 @@ node scripts/integration.mjs; node scripts/network-soak.ts --rooms 200
 - 138 tests, typechecks, build, bundle secrecy and canonical redirect checks passed.
 - Old Workers URL redirects to Pages; its five-minute cleanup schedule stays active.
 - Browser storage is origin-specific; players start fresh browser sessions at the new URL.
+
+## Growth analytics and organic launch (11 November 2026)
+- Applied marketingskills analytics, launch, product-marketing, social and community guidance.
+- Added private owner dashboard: game health, opt-in acquisition/funnel, mature return cohorts,
+  bot separation, daily charts, CSV, campaign links, existing moderation and operations.
+- Added rate-limited owner login, signed/revocable 12-hour cookie and additive migration 0002.
+- Optional visitor tracking requires fresh consent; DNT, allowlisted labels and 90-day cleanup.
+- Privacy copy, social preview, canonical metadata, robots and sitemap updated.
+- Reddit + football-group launch pack in docs/marketing; drafts only, no spend or posts.
+- r/football explicitly bans app promotion and is excluded. WebGames rules and playmygame
+  reskin restrictions documented; current rules must be checked immediately before posting.
+- 149 tests, typechecks, build, bundle secrecy and 20-room/80-player network regression pass.
+- Local dashboard desktop/mobile and CSV verified; details in docs/analytics.md.
+- Production rollout pending owner passphrase setup and migration/deploy verification.

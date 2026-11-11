@@ -2,7 +2,7 @@ import {DatabaseSync} from 'node:sqlite';
 import {readFileSync} from 'node:fs';
 export class TestD1{
  sqlite=new DatabaseSync(':memory:');
- constructor(){for(const file of ['0000_rooms.sql','0001_operations.sql'])this.sqlite.exec(readFileSync(new URL('../../drizzle/'+file,import.meta.url),'utf8'))}
+ constructor(){for(const file of ['0000_rooms.sql','0001_operations.sql','0002_growth_analytics.sql'])this.sqlite.exec(readFileSync(new URL('../../drizzle/'+file,import.meta.url),'utf8'))}
  prepare(sql:string){return new TestStatement(this,sql)}
  async batch(statements:TestStatement[]){this.sqlite.exec('BEGIN');try{const results=statements.map(s=>s.execute());this.sqlite.exec('COMMIT');return results}catch(error){this.sqlite.exec('ROLLBACK');throw error}}
  close(){this.sqlite.close()}

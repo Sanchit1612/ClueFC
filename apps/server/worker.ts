@@ -1,6 +1,7 @@
 import {cleanup,operationalOverview} from './operations.ts';
 import {api,type Env} from './api.ts';
 import html from '../web/index.html';
+import socialPreview from '../../assets/social-preview.png';
 import css from '../web/style.css';
 declare const CLIENT_JS:string;
 const headers={
@@ -13,8 +14,11 @@ export default {async scheduled(_event:ScheduledEvent,env:Env,ctx:ExecutionConte
  if(path.startsWith('/api/')||path==='/health')res=await api(req,env,ctx);
  else if(path==='/app.js')res=new Response(typeof CLIENT_JS==='undefined'?'console.log("Run npm run build first")':CLIENT_JS,{headers:{'Content-Type':'text/javascript; charset=utf-8'}});
  else if(path==='/style.css')res=new Response(css,{headers:{'Content-Type':'text/css; charset=utf-8'}});
+ else if(path==='/social-preview.png')res=new Response(socialPreview,{headers:{'Content-Type':'image/png'}});
+ else if(path==='/robots.txt')res=new Response('User-agent: *\nAllow: /\nDisallow: /r/\nDisallow: /admin\nDisallow: /analytics\nDisallow: /api/\nSitemap: https://cluefc.pages.dev/sitemap.xml\n',{headers:{'Content-Type':'text/plain'}});
+ else if(path==='/sitemap.xml')res=new Response('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://cluefc.pages.dev/</loc></url><url><loc>https://cluefc.pages.dev/how</loc></url></urlset>',{headers:{'Content-Type':'application/xml'}});
  else if(path==='/favicon.svg')res=new Response('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#183c30"/><text x="32" y="44" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="38" fill="#d6ef8d">C</text></svg>',{headers:{'Content-Type':'image/svg+xml'}});
- else if(path==='/'||/^\/r\/[^/]+$/.test(path)||['/how','/privacy','/terms','/admin'].includes(path))res=new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8'}});
+ else if(path==='/'||/^\/r\/[^/]+$/.test(path)||['/how','/privacy','/terms','/admin','/analytics'].includes(path))res=new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8'}});
  else res=new Response('Not found',{status:404});
- const h=new Headers(res.headers);for(const [k,v] of Object.entries(headers))h.set(k,v);return new Response(res.body,{status:res.status,headers:h});
+ const h=new Headers(res.headers);for(const [k,v] of Object.entries(headers))h.set(k,v);if(/^\/(?:r\/|api\/|admin|analytics)/.test(path))h.set('X-Robots-Tag','noindex, nofollow');return new Response(res.body,{status:res.status,headers:h});
 }};

@@ -1,4 +1,6 @@
 import {z} from 'zod';
+import {hasAdminAccess,adminLogout} from './admin-auth.ts';
+import {growthEffects,growthOverview} from './growth.ts';
 import {fail} from '../../packages/game-core/index.ts';
 import {isAdmin,mac,type SecurityEnv} from './security.ts';
 import type {Room} from './rooms.ts';
@@ -8,6 +10,7 @@ export async function metric(db:D1Database,name:string,value=1,now=Date.now()){
 }
 export async function persistEffects(db:D1Database,before:Room,after:Room,now:number){
  const jobs:Promise<unknown>[]=[];
+ const humanSeats=after.players.filter(p=>!p.bot&&!before.players.some(q=>q.id===p.id)).length;if(humanSeats)jobs.push(metric(db,'human_seats_created',humanSeats,now));
  if(after.matches>before.matches){if(after.players.some(p=>p.bot))jobs.push(metric(db,'bot_matches_started',1,now));jobs.push(metric(db,'matches_started',1,now));if(after.matches>1)jobs.push(metric(db,'rematches',1,now));if(after.matches===2)jobs.push(metric(db,'groups_playing_second_match',1,now))}
  if(after.game?.phase==='ended'&&before.game?.phase!=='ended'){
   jobs.push(metric(db,'matches_finished',1,now),metric(db,'match_duration_ms',(after.game.endedAt??now)-after.game.started,now));
@@ -20,10 +23,12 @@ export async function persistEffects(db:D1Database,before:Room,after:Room,now:nu
   const id=await mac('report-deduplication',`${after.code}:${r.reporter}:${r.target}:${r.at}`);
   jobs.push(db.prepare('INSERT OR IGNORE INTO reports(id,room,reporter,target,nickname,clue,reason,created) VALUES(?,?,?,?,?,?,?,?)').bind(id,after.code,r.reporter,r.target,r.name,r.clue,r.reason,r.at).run(),metric(db,'player_reports',1,now));
  }
- await Promise.all(jobs);
+ await Promise.all(jobs);await growthEffects(db,before,after,now);
 }
 export async function cleanup(db:D1Database,now=Date.now()){
  await db.batch([
+  db.prepare('DELETE FROM admin_sessions WHERE expires<?').bind(now),
+  db.prepare('DELETE FROM growth_events WHERE created<?').bind(now-90*86400000),db.prepare('DELETE FROM growth_sessions WHERE started<?').bind(now-90*86400000),db.prepare('DELETE FROM growth_matches WHERE started<?').bind(now-90*86400000),
   db.prepare('DELETE FROM rooms WHERE expires<?').bind(now),db.prepare('DELETE FROM limits WHERE expires<?').bind(now),
   db.prepare('DELETE FROM buckets WHERE expires<?').bind(now),db.prepare('DELETE FROM security_bans WHERE expires<?').bind(now),
   db.prepare('DELETE FROM reports WHERE created<?').bind(now-30*86400000),db.prepare('DELETE FROM analytics_visits WHERE created<?').bind(now-90*86400000),
@@ -36,13 +41,15 @@ export async function operationalOverview(env:SecurityEnv,now:number){
   env.DB.prepare("SELECT COUNT(*) AS count FROM reports WHERE status='open' AND created>?").bind(now-30*86400000).first<{count:number}>(),
   env.DB.prepare('SELECT day,name,value,samples FROM metrics WHERE day>=? ORDER BY day DESC,name').bind(dayOf(now-30*86400000)).all()
  ]);
- let connected=0,active=0;for(const row of rooms.results){const room=JSON.parse(row.state) as Room;connected+=room.players.filter(p=>!p.bot&&!p.left&&now-p.seen<25000).length;if(room.game&&room.game.phase!=='ended')active++}
+ let connected=0,active=0;for(const row of rooms.results){const room=JSON.parse(row.state) as Room;const humansOnline=room.players.filter(p=>!p.bot&&!p.left&&now-p.seen<25000).length;connected+=humansOnline;if(humansOnline&&room.game&&room.game.phase!=='ended')active++}
  const errors=metrics.results.filter((m:any)=>m.name==='request_errors'&&m.day===dayOf(now)).reduce((n,m:any)=>n+m.value,0);
  return {rooms:rooms.results.length,connectedPlayers:connected,activeMatches:active,openReports:reports?.count??0,metrics:metrics.results,alerts:[...(errors>10?[{severity:'error',message:`${errors} request errors today. Review Worker logs.`}]:[]),...(reports&&reports.count>10?[{severity:'warning',message:`${reports.count} moderation reports await review.`}]:[])],serverTime:now};
 }
 export async function adminApi(req:Request,env:SecurityEnv,body:unknown,now:number){
- if(!isAdmin(req,env))return Response.json({error:'ADMIN_REQUIRED'},{status:403});
+ if(!await hasAdminAccess(req,env,now))return Response.json({error:'ADMIN_REQUIRED'},{status:403});
  const path=new URL(req.url).pathname;
+ if(path==='/api/admin/logout'&&req.method==='POST')return await adminLogout(req,env);
+ if(path==='/api/admin/analytics'&&req.method==='GET'){const url=new URL(req.url);const days=z.coerce.number().int().refine(n=>[7,30,90].includes(n)).parse(url.searchParams.get('days')??7);const end=new Date(now);end.setUTCHours(24,0,0,0);return Response.json(await growthOverview(env,end.getTime()-days*86400000,end.getTime(),now))}
  if(path==='/api/admin/overview'&&req.method==='GET')return Response.json(await operationalOverview(env,now));
  if(path==='/api/admin/reports'&&req.method==='GET'){
   const data=await env.DB.prepare('SELECT id,room,nickname,clue,reason,created,status,note FROM reports WHERE created>? ORDER BY created DESC LIMIT 100').bind(now-30*86400000).all();return Response.json(data.results);

@@ -1,0 +1,6 @@
+source,medium,campaign,content,url,status
+r-webgames,community,beta-launch,launch-post,https://cluefc.pages.dev/,clean URL; approval and duplicate check required
+r-playmygame,community,beta-launch,launch-post,https://cluefc.pages.dev/?utm_source=r-playmygame&utm_medium=community&utm_campaign=beta-launch&utm_content=launch-post,draft; do not publish without approval
+football-community,community,beta-launch,mod-approved,https://cluefc.pages.dev/?utm_source=football-community&utm_medium=community&utm_campaign=beta-launch&utm_content=mod-approved,draft; do not publish without approval
+discord,community,football-challenge,mod-approved,https://cluefc.pages.dev/?utm_source=discord&utm_medium=community&utm_campaign=football-challenge&utm_content=mod-approved,draft; do not publish without approval
+whatsapp,referral,friends-invite,invite,https://cluefc.pages.dev/?utm_source=whatsapp&utm_medium=referral&utm_campaign=friends-invite&utm_content=invite,draft; do not publish without approval
