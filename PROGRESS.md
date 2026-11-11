@@ -101,4 +101,8 @@ node scripts/integration.mjs; node scripts/network-soak.ts --rooms 200
   reskin restrictions documented; current rules must be checked immediately before posting.
 - 149 tests, typechecks, build, bundle secrecy and 20-room/80-player network regression pass.
 - Local dashboard desktop/mobile and CSV verified; details in docs/analytics.md.
-- Production rollout pending owner passphrase setup and migration/deploy verification.
+- Production migration 0002 and Pages deployment 7cea29ef completed; owner secret is encrypted.
+- Public pages/health/assets, private API denial, forged-owner denial, DNT suppression and
+  legacy redirect passed live checks without inserting test visitor records.
+- Scheduled redirect Worker updated (d42c1e93); cleanup still runs every five minutes.
+- GitHub main published as 9ca1191; owner live login check pending.
